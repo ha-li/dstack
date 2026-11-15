@@ -1,0 +1,5 @@
+{
+    "name": "pr-commit-plugin",
+    "version": "0.0.1",
+    "description": "Helps write good commit messages"
+}
