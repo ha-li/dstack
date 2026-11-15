@@ -1,0 +1,9 @@
+{
+  "name": "git-init-repo",
+  "version": "0.1.0",
+  "description": "Safely connects a local git repo to a new remote and does the first push.",
+  "author": {
+    "name": "ha-li"
+  },
+  "keywords": ["git", "github", "remote", "push"]
+}
