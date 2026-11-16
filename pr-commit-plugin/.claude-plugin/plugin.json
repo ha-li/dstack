@@ -1,5 +1,9 @@
 {
     "name": "pr-commit-plugin",
     "version": "0.0.1",
-    "description": "Helps write good commit messages"
+    "description": "Helps write good commit messages",
+    "keywords": ["git", "github", "commit", "message"],
+    "author": {
+        "name": "ha-li"
+    } 
 }

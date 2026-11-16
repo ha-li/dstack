@@ -1,6 +1,8 @@
 ---
 name: first-push
 description: Use when the user wants to push a local git repo to a remote for the first time, such as "push this to GitHub", "publish this repo", "set up a remote", or "add origin and push", especially when no remote is configured yet or the remote URL is unknown. Not for routine pushes to an existing upstream.
+argument-hint: "[remote-url]"
+allowed-tools: Bash(bash *preflight.sh), Bash(git status:*), Bash(git remote -v), Bash(git ls-remote:*)
 ---
 
 # First push to a new remote
@@ -32,8 +34,10 @@ It prints `key=value` lines. Act on them in this order:
 
 ## Step 2: Find out where to push
 
-The remote is unknown, so never invent a URL. Pick the case that applies:
+Remote URL passed on the command line: `$ARGUMENTS` (blank if none).
+The remote may be unknown, so never invent a URL. 
 
+0. **A URL was passed above**: use it. Skip asking, but still run Step 3's checks.
 1. **`remotes=` already lists a remote** (usually `origin`): show it to the user
    and ask whether to push there. If they say no, ask for the new URL.
 2. **The user gave a URL**: use it.
