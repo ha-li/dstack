@@ -13,6 +13,11 @@
       "name": "pr-commit-plugin",
       "source": "./pr-commit-plugin",
       "description": "Helps write good commit messages"
+    },
+    {
+      "name": "dumbass",
+      "source": "./dumbass",
+      "description": "Use when you don't understand what the agent said."
     }
   ]
 }

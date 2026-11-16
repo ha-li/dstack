@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# For each plugin with staged changes, add 1 to the patch version in its plugin.json
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+for dir in $(git diff --cached --name-only | cut -d/ -f1 | sort -u); do
+  manifest="$dir/.claude-plugin/plugin.json"
+  [ -f "$manifest" ] || continue
+  # Skip if you already changed the version yourself in this commit
+  git diff --cached -U0 -- "$manifest" | grep -q '^+.*"version"' && continue
+
+  python3 - "$manifest" <<'PY'
+import json, sys
+p = sys.argv[1]
+d = json.load(open(p))
+ma, mi, pa = (d.get("version", "0.0.0").split(".") + ["0", "0"])[:3]
+d["version"] = f"{ma}.{mi}.{int(pa) + 1}"
+with open(p, "w") as f:
+    json.dump(d, f, indent=2); f.write("\n")
+print(f"bumped {p} -> {d['version']}")
+PY
+  git add "$manifest"
+done
