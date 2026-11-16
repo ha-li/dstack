@@ -1,0 +1,20 @@
+  # ha-li-plugins
+  
+  Claude Code plugins for everyday git work.
+  
+  ## Install
+  
+  ```
+  /plugin marketplace add ha-li/plugins
+  /plugin install <plugin-name>@ha-li-plugins
+  ```
+  
+  ## Plugins
+  
+  | Plugin | What it does |
+  |---|---|
+  | `git-init-repo` | Connects a repo to a new remote and does the first push safely. Blocks force pushes. |
+  | `pr-commit-plugin` | Writes commit messages, and checks staged files for secrets first. |
+  | `dumbass` | Rewrites Claude's last answer in plain language. | 
+  
+  ## Example
