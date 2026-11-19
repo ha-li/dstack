@@ -1,5 +1,8 @@
 {
   "name": "dumbass",
   "description": "Use when you don't understand what the agent said.",
-  "version": "0.0.2"
+  "version": "0.0.2",
+  "author": {
+    "name": "ha-li"
+  }
 }

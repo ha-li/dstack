@@ -1,5 +1,6 @@
 {
   "name": "ha-li-plugins",
+  "description": "Plugins by ha-li",
   "owner": {
     "name": "ha-li"
   },
@@ -17,7 +18,26 @@
     {
       "name": "dumbass",
       "source": "./dumbass",
-      "description": "Use when you don't understand what the agent said."
+      "description": "Use when you don't understand what the agent said.",
+      "author": {
+        "name": "ha-li"
+      }
+    }, 
+    {
+      "name": "architect",
+      "source": "./architect",
+      "description": "Use when asked to analyze, audit, design or redesign how a codebase or subsystem is structured. State ownership, duplicated ways of doing a task, coupling between modules, or 'workarounds keep piling up'.",
+      "author": {
+        "name": "ha-li"
+      }
+    },
+    {
+      "name": "explain",
+      "source": "./explain",
+      "description": "Use when asked 'how does X work' type questions. If the scope is ambiguous, state your interpretation and explore. The user can redirect.",
+      "author": {
+        "name": "ha-li"
+      }
     }
   ]
 }

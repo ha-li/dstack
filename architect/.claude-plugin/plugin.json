@@ -1,0 +1,9 @@
+{
+    "name": "architect",
+    "description": "Use to sketch types, signatures and module structure before code, then stay in the loop while implementation fills in. Use for /architect,'design this', 'architect this' and other non trivial work where jumping to code would lock in the wrong shape.",
+    "version": "0.0.1",
+    "author": {
+      "name": "ha-li"
+    }
+  }
+  
