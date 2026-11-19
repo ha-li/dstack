@@ -1,0 +1,68 @@
+{
+  "name": "ha-li-plugins",
+  "interface": {
+    "displayName": "ha-li-plugins"
+  },
+  "plugins": [
+    {
+      "name": "git-init-repo",
+      "source": {
+        "source": "local",
+        "path": "./git-init-repo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "pr-commit-plugin",
+      "source": {
+        "source": "local",
+        "path": "./pr-commit-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "dumbass",
+      "source": {
+        "source": "local",
+        "path": "./dumbass"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "architect",
+      "source": {
+        "source": "local",
+        "path": "./architect"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "explain",
+      "source": {
+        "source": "local",
+        "path": "./explain"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
