@@ -1,7 +1,7 @@
 {
-  "name": "ha-li-plugins",
+  "name": "dstack",
   "interface": {
-    "displayName": "ha-li-plugins"
+    "displayName": "dstack"
   },
   "plugins": [
     {
