@@ -13,7 +13,7 @@
 
   ```sh
   codex plugin marketplace add ha-li/dstack
-  codex plugin add <plugin-name>@ha-li-plugins
+  codex plugin add <plugin-name>@dstack
   ```
 
   To use a local checkout instead, run this from the repository root:
