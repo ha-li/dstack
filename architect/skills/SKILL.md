@@ -1,6 +1,6 @@
 ---
 name: architect
-description: "Use when asked to analyze, audit, design or redesign how a codebase or subsystem is structured. State ownership, duplicated ways of doing a task, coupling between modules, or "workarounds keep piling up".
+description: "Use when asked to analyze, audit, design or redesign how a codebase or subsystem is structured. State ownership, duplicated ways of doing a task, coupling between modules, or 'workarounds keep piling up'"
 disable-model-invocation: true
 ---
 

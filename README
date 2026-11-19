@@ -6,7 +6,7 @@
   
   ```
   /plugin marketplace add ha-li/dstack
-  /plugin install <plugin-name>@ha-li-plugins
+  /plugin install <plugin-name>@dstack
   ```
   
   ## Install in Codex
